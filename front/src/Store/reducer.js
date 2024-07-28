@@ -3,28 +3,37 @@ import cloneDeep from 'lodash/cloneDeep'
 
 const getCartData = () => {
 
-    const currentCart = localStorage.getItem("cartItems")
-    if (currentCart == []) {
+    let currentCart = localStorage.getItem("cartItems")
+    if (currentCart && currentCart == []) {
         return [];
     }
-    else {
+    else if(!currentCart) {
+        currentCart=[]
+        localStorage.setItem("cartItems", JSON.stringify(currentCart))
         return JSON.parse(currentCart);
+    }
+    else{
+        return JSON.parse(currentCart);
+
     }
 
 }
-
 const getCartTotal = () => {
 
-    const currentTotal = localStorage.getItem("cartTotal")
+    let currentTotal = localStorage.getItem("cartTotal")
     if (currentTotal == 0) {
         return 0;
     }
-    else {
+    else if(!currentTotal){
+        currentTotal=0
+        localStorage.setItem("cartTotal", JSON.stringify(currentTotal))
+        return JSON.parse(currentTotal);
+    }
+    else{
         return JSON.parse(currentTotal);
     }
 
 }
-
 
 const VALUE = {
     cartTotal: getCartTotal(),
@@ -240,8 +249,13 @@ export default function cartReducer(
                         table_id: state.table_id,
                         table_num: state.table_num
                     }
-
-                
+                    case "UPDATE":
+                        state.updated = action.payload;
+                        return {
+                            ...state,
+                            updated: state.updated,
+                        };
+                    
             
      
 

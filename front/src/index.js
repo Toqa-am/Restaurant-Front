@@ -1,3 +1,8 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "react-quill/dist/quill.snow.css";
+import "react-datepicker/dist/react-datepicker.css";
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './Store/srore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
      <Provider store={store}>

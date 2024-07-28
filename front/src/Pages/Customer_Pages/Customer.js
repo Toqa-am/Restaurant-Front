@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch,Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import { Navbar } from "../../Componenets/Customer/Navbar";
 import Cart from "./Cart";
-import DiningTables from "../Admin_Pages/DiningTables";
+// import DiningTables from "../Admin_Pages/DiningTables";
 import { Register } from "./Register";
 import { Verification } from "./Verification";
 import { ResetPassword } from "./ResetPassword";

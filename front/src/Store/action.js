@@ -71,5 +71,10 @@ export const search = (payload) => {
       payload: payload
     };
   };
-
-
+//NEW
+  export const update = (payload) => {
+    return {
+      type: 'UPDATE',
+      payload: payload
+    };
+  };
