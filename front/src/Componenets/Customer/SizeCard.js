@@ -23,10 +23,11 @@ export function SizeCard(props){
         <label className="form-check-label " for={`radio-${size}`} >
           {size}
         </label>
-        <br></br>
-        Cost: <strong>{props.price}</strong> 
-        <br></br>
-        NOP:{props.nop}
+        
+        Cost: <strong>{props.price} </strong> 
+       
+         | 
+        NOP: {props.nop} 
       </div>
         
         

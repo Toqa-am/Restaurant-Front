@@ -15,7 +15,6 @@ export function AddonsExtra(props){
           <label className="form-check-label" for={`radio-${props.name}`} >
             {props.name}
           </label>
-<br></br>
           <strong>{props.price} OMR</strong> 
           <br></br>
           <div className="quantity-span">

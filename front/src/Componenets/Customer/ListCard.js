@@ -118,6 +118,9 @@ export function ListCard(pokemon) {
         console.log(e);
         console.log(item);
         setChosen(true)
+        if(!item.quant){
+            item.quant=1;
+        }
        
         if (e.target.checked) {
             setCartFormData({ ...CartFormData, addons: [...CartFormData.addons, item] })
@@ -180,7 +183,7 @@ export function ListCard(pokemon) {
                         }
 
                         <button
-                            className="button rounded-pill"
+                            className="button rounded-pill p-1"
                             data-bs-toggle="modal"
                             data-bs-target={`#staticBackdrop-${pokemon.id}`}
                             onClick={() => {

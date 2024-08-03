@@ -209,21 +209,21 @@ div.scrollmenu {
   .filter-button{
     background-color: white;
     border: 0;
-    height: max-content;
+    height: 100px;
+    width: 100px;
     vertical-align: center;
     text-align: center;
+    padding: 10px;
     border-radius: 10px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .filter-button:hover{
-    background-color:  #f5cfb8;
-  }
+  
 
   .active, .primary{
     /* rgba(219,228,254,255) */
     background-color:
-    #f0ded1 ;
+    #f5cfb8 ;
     border:0px;
     /* border-bottom: solid 2px rgb(2, 4, 26); */
   }
@@ -296,7 +296,7 @@ a, a:hover{
     
 
     .pokemon-list {
-        /* padding: 0 5%; */
+        text-align: left;
     }
     .pokemon-details .button {
         padding: 5px;
@@ -403,6 +403,9 @@ a, a:hover{
 height: 90px;
 font-size: small;
 }
+.form-check{
+    height: 22px;
+}
 .addon{
 height: 100px;
 font-size: small;
@@ -445,4 +448,29 @@ translate: -13px;
         translate: -13px;
     }
 
+}
+
+.filter-card-text{
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  max-width: 100%;
+
+}
+
+
+.filter-card-text:hover{
+    overflow: visible;
+    text-overflow: clip;
+    white-space: wrap;
+
+}
+.filter-button:hover {
+    height: max-content;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: wrap;
+    background-color:  #f5cfb8;
 }
