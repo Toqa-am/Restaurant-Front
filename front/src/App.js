@@ -48,13 +48,15 @@ function App() {
         {/* <Test/> */}
         <BrowserRouter>
 
-          <div className='main-container'>
+         
             <Switch>
               <Route path="/auth" component={Auth} />
               <Route path="/admin/dashboard" component={Dashboard} />
+              <div className='main-container'>
               <Route path="/customer"  component={Customer} />
+              </div>
             </Switch>
-          </div>
+          
 
         </BrowserRouter>
 
