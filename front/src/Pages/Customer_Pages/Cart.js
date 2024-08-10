@@ -192,7 +192,7 @@ export default function Cart() {
     return (
         <>
             <div className="d-flex justify-content-around container pt-5 flex-wrap">
-                <div className="col-12 col-md-6 mb-4">
+                <div className="col-12 col-md-6 mb-4 text-start">
                     <Link to="/customer/menu">
                         <i className="fa-solid fa-backward pb-3"></i> Back to Home
                     </Link>

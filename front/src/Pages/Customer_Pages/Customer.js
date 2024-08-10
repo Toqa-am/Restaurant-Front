@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch,Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import { Navbar } from "../../Componenets/Customer/Navbar";
 import Cart from "./Cart";
-// import DiningTables from "../Admin_Pages/DiningTables";
 import { Register } from "./Register";
 import { Verification } from "./Verification";
 import { ResetPassword } from "./ResetPassword";
@@ -10,6 +9,7 @@ import { CustomerLogin } from "./CustomerLogin";
 import { Fail } from "./PaymentFailiur";
 import { Success } from "./PaymentSuccess";
 import { Email } from "./Email";
+import NotFound from "./NotFound";
 
 export function Customer(){
     return(
@@ -26,6 +26,7 @@ export function Customer(){
           <Route path="/customer/emailtoresetpassord" component={Email}/>
           <Route path="/customer/paymentfailed" component={Fail}/>
           <Route path="/customer/paymentsucceded" component={Success}/>
+          <Route component={NotFound} />
         </Switch>
       </div>
         </>

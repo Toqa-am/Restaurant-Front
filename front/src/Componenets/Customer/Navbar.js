@@ -35,7 +35,9 @@ export function Navbar() {
 
     return (
         <>
-            <nav className="navbar sticky-top navbar-expand-lg navbar-light  d-flex justify-content-between py-0">
+            <nav className="navbar sticky-top navbar-expand-lg navbar-light  d-flex justify-content-between py-0"
+            style={{backgroundColor:'white'}}
+            >
                 <Link to='/customer/menu'>
                     <a className="navbar-brand" href="/">
                         <img src={logo1} height={45}></img>

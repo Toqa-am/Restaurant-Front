@@ -126,7 +126,7 @@ export function ResetPasswordGeneral(props) {
                         <div  className={(changed?"visible":"invisible")} >
                         <br>
                         </br>
-                    You Reseted your password successfully, now you can continue to <Link to="/customer/checkout"><strong className='text-success'>Checkout</strong></Link>  page and log in.
+                    You Reseted your password successfully.
                     </div>
 
 
