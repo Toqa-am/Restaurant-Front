@@ -245,7 +245,7 @@ export function ListCard(pokemon) {
                                             </>)}
                                         {pokemon.addons && (
                                             <>
-                                                <div className='d-flex ' >
+                                                <div className='d-flex justify-content-around scrollmenu  ' >
                                                     {pokemon.addons.map((item) => (
 
                                                         <AddonsExtra name={item.name} inputName="addons" price={item.cost} img={item.image} change={(e) => handleCheckboxChange(item, e)} q={item.quant} increase={() => increaseAddon(item)} decrease={() => decreaseAddon(item)} />
